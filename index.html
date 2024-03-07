@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicfy</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Musica</a></li>
+                <li><a href="imagenes.html">Imagenes</a></li>
+                <li><a href="videos.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h2>Playlist</h2>
+        <ul>
+            <ol onclick="changeSong(0)">The Fall - Half alive</ol>
+            <ol onclick="changeSong(1)">Enemy - Imagine dragons</ol>
+            <ol onclick="changeSong(2)">Limbo - Freddie dredd</ol>
+            <ol onclick="changeSong(3)">Cradles - Sub Urban</ol>
+            <ol onclick="changeSong(4)">Dissolve - Absofacto</ol>
+        </ul>
+    </aside>
+    <br>
+    <div class="reproductor">
+        <img id="portada" src="img/the_fall.jpg" class="portada" alt="portada">
+        <h3 id="titulo">The Fall - Half alive</h3>
+            <audio id="cancion">
+        <source src="audio/halfalive-the fall.mp3" type="audio/mp3">
+            </audio>
+        <div id="botones">
+            <button onclick="previousSong()">Anterior</button>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="stopAudio()">Stop</button>
+            <button onclick="nextSong()">Siguiente</button>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <a href="https://www.instagram.com/hbayconygriega/">Hugo Bay</a>
+        <a href="https://www.instagram.com/vapor_buap/">Vapor BUAP</a>
+    </footer>
+    <script src="js/buttons.js"></script>
+    </body>
+</html>
